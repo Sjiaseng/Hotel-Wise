@@ -1,0 +1,26 @@
+Room ID: 1
+Room Level: 1
+Room Size: 2
+IC/Passport: 039923-10-2033
+Name: Jackie
+Email: jackie@gmail.com
+Contact: 012-2345221
+Start Date: 03/05/2023
+End Date: 05/05/2023
+Days of Stay: 2
+Check In: 15/05/2023 03:25:28
+Check Out: 22/05/2023 21:47:26
+
+Room ID: 2
+Room Level: 1
+Room Size: 2
+IC/Passport: 032223-10-2033
+Name: Lucy
+Email: Lucy@gmail.com
+Contact: 018-2345221
+Start Date: 06/05/2023
+End Date: 07/05/2023
+Days of Stay: 1
+Check In: 07/05/2023
+Check Out: 08/05/2023
+

@@ -1,0 +1,21 @@
+Full Name: Jackie Mason
+Ic/Passport: 039928-12-2344
+Gender: Male
+Email: jackiemason@gmail.com
+Contact: 0123456787
+Register Date: 03/05/2023
+
+Full Name: Alan Mason
+Ic/Passport: 022928-12-2355
+Gender: Male
+Email: alanmason@gmail.com
+Contact: 0133456787
+Register Date: 04/05/2023
+
+Full Name: Harry Potter
+Ic/Passport: 045928-12-2361
+Gender: Male
+Email: Harry@gmail.com
+Contact: 0123456787
+Register Date: 05/05/2023
+

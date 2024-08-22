@@ -1,0 +1,79 @@
+Room ID: 1
+Room Level: 1
+Room Size: 2
+
+Room ID: 2
+Room Level: 1
+Room Size: 2
+
+Room ID: 3
+Room Level: 1
+Room Size: 2
+
+Room ID: 4
+Room Level: 1
+Room Size: 2
+
+Room ID: 5
+Room Level: 1
+Room Size: 2
+
+Room ID: 6
+Room Level: 1
+Room Size: 4
+
+Room ID: 7
+Room Level: 1
+Room Size: 4
+
+Room ID: 8
+Room Level: 1
+Room Size: 4
+
+Room ID: 9
+Room Level: 1
+Room Size: 4
+
+Room ID: 10
+Room Level: 1
+Room Size: 4
+
+Room ID: 11
+Room Level: 2
+Room Size: 5
+
+Room ID: 12
+Room Level: 2
+Room Size: 5
+
+Room ID: 13
+Room Level: 2
+Room Size: 5
+
+Room ID: 14
+Room Level: 2
+Room Size: 5
+
+Room ID: 15
+Room Level: 2
+Room Size: 5
+
+Room ID: 16
+Room Level: 2
+Room Size: 6
+
+Room ID: 17
+Room Level: 2
+Room Size: 6
+
+Room ID: 18
+Room Level: 2
+Room Size: 6
+
+Room ID: 19
+Room Level: 2
+Room Size: 6
+
+Room ID: 20
+Room Level: 2
+Room Size: 6

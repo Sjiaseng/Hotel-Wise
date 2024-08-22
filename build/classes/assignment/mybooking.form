@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,2,108,0,0,4,-100"/>
+  </AuxValues>
+
+  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+    <Property name="useNullLayout" type="boolean" value="false"/>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="47" y="108" width="1087" height="-1"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTable" name="bookingTable">
+          <Properties>
+            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="model" type="code"/>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="try (RandomAccessFile raf = new RandomAccessFile(new File(&quot;Booking.txt&quot;), &quot;r&quot;)) {&#xa;            &#xa;            String line;&#xa;            while ((line = raf.readLine()) != null) {&#xa;                String[] data = new String[13];&#xa;                data[0] = line.substring(9); //id&#xa;                line = raf.readLine();&#xa;                data[1] = line.substring(12); //level&#xa;                line = raf.readLine();&#xa;                data[2] = line.substring(11); //size&#xa;                line = raf.readLine();&#xa;                data[3] = line.substring(13); // ic&#xa;                line = raf.readLine();&#xa;                data[4] = line.substring(6); //name&#xa;                line = raf.readLine();&#xa;                data[5] = line.substring(7); //email&#xa;                line = raf.readLine();&#xa;                data[6] = line.substring(9); //contact&#xa;                line = raf.readLine();&#xa;                data[7] = line.substring(12); //start&#xa;                line = raf.readLine();&#xa;                data[8] = line.substring(10); //end&#xa;                line = raf.readLine();&#xa;                data[9] = line.substring(14); //day to stay&#xa;                line = raf.readLine();&#xa;                data[10] = line.substring(10); //checkin&#xa;                line = raf.readLine();&#xa;                data[11] = line.substring(11); //checkout&#xa;                line = raf.readLine();&#xa;&#xa;                model.addRow(data);&#xa;            }&#xa;&#xa;        } catch (IOException e) {&#xa;            e.printStackTrace();&#xa;        }"/>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="String[] COLUMN_NAMES = {&quot;Room ID&quot;, &quot;Level&quot;, &quot;Size&quot;, &quot;IC/Passport&quot;, &quot;Name&quot;, &quot;Email&quot;,&#xa;&quot;Contact&quot;, &quot;Start Date&quot;, &quot;End Date&quot;, &quot;Days of stay&quot;, &quot;Check In&quot;, &quot;Check Out&quot; };&#xa;DefaultTableModel model = new DefaultTableModel(COLUMN_NAMES, 0);"/>
+          </AuxValues>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Booking"/>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="514" y="22" width="-1" height="-1"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JButton" name="bookingBack">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Back"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bookingBackActionPerformed"/>
+      </Events>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="31" y="25" width="-1" height="-1"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel2">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="14" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Search: "/>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="101" y="68" width="-1" height="-1"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JTextField" name="bookingSearch">
+      <Events>
+        <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="bookingSearchKeyReleased"/>
+      </Events>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="173" y="68" width="179" height="-1"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel3">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="14" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Room ID + IC :"/>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="40" y="540" width="100" height="-1"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="bookingformID">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="comboBoxModel" type="code"/>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="String roomid;&#xa;&#xa;    RandomAccessFile raf = null;&#xa;    List&lt;String&gt; bookingidroom = new ArrayList&lt;&gt;();&#xa;&#xa;    try {&#xa;        raf = new RandomAccessFile(&quot;Booking.txt&quot;, &quot;rw&quot;);&#xa;&#xa;        for (int i = 1; i &lt; countlines(); i++) {&#xa;  &#xa;            roomid = raf.readLine().substring(9);&#xa;            raf.readLine();&#xa;            raf.readLine();&#xa;            raf.readLine();&#xa;            raf.readLine();&#xa;            raf.readLine();&#xa;            raf.readLine();&#xa;            raf.readLine();&#xa;            raf.readLine();&#xa;            raf.readLine();&#xa;            raf.readLine();&#xa;            raf.readLine();&#xa;            raf.readLine();&#xa;        if (!bookingidroom.contains(roomid)) {&#xa;            bookingidroom.add(roomid);&#xa;        }&#xa;}&#xa;    } catch (IOException e) {&#xa;        e.printStackTrace();&#xa;    } finally {&#xa;        if (raf != null) {&#xa;            try {&#xa;                raf.close();&#xa;            } catch (IOException e) {&#xa;                e.printStackTrace();&#xa;            }&#xa;        }&#xa;    }&#xa;&#xa;    // Create a DefaultComboBoxModel to hold the IC/Passport data&#xa;    DefaultComboBoxModel&lt;String&gt; comboBoxModel = new DefaultComboBoxModel&lt;&gt;();&#xa;    comboBoxModel.addElement(&quot;None&quot;);&#xa;    // Iterate over the IC/Passport numbers and add them to the ComboBoxModel&#xa;    for (String room : bookingidroom) {&#xa;        comboBoxModel.addElement(room);&#xa;    }"/>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="150" y="540" width="130" height="-1"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JButton" name="bookingCheckin">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Check In"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bookingCheckinActionPerformed"/>
+      </Events>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="440" y="540" width="-1" height="-1"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="bookingformIC">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="comboBoxModel2" type="code"/>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="String customeric;&#xa;&#xa;    RandomAccessFile raf2 = null;&#xa;    List&lt;String&gt; icpassport = new ArrayList&lt;&gt;();&#xa;&#xa;    try {&#xa;        raf2 = new RandomAccessFile(&quot;Booking.txt&quot;, &quot;rw&quot;);&#xa;&#xa;        for (int i = 1; i &lt; countlines(); i++) {&#xa;  &#xa;            raf2.readLine();&#xa;            raf2.readLine();&#xa;            raf2.readLine();&#xa;            customeric = raf2.readLine().substring(13);&#xa;            raf2.readLine();&#xa;            raf2.readLine();&#xa;            raf2.readLine();&#xa;            raf2.readLine();&#xa;            raf2.readLine();&#xa;            raf2.readLine();&#xa;            raf2.readLine();&#xa;            raf2.readLine();&#xa;            raf2.readLine();&#xa;            if (!icpassport.contains(customeric)) {&#xa;                    icpassport.add(customeric);&#xa;                }&#xa; &#xa;        }&#xa;    } catch (IOException e) {&#xa;        e.printStackTrace();&#xa;    } finally {&#xa;        if (raf != null) {&#xa;            try {&#xa;                raf.close();&#xa;            } catch (IOException e) {&#xa;                e.printStackTrace();&#xa;            }&#xa;        }&#xa;    }&#xa;&#xa;    // Create a DefaultComboBoxModel to hold the IC/Passport data&#xa;    DefaultComboBoxModel&lt;String&gt; comboBoxModel2 = new DefaultComboBoxModel&lt;&gt;();&#xa;    comboBoxModel2.addElement(&quot;None&quot;);&#xa;    // Iterate over the IC/Passport numbers and add them to the ComboBoxModel&#xa;    for (String ic : icpassport) {&#xa;        comboBoxModel2.addElement(ic);&#xa;    }"/>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="290" y="540" width="130" height="-1"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JButton" name="bookingCheckout">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Check Out"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bookingCheckoutActionPerformed"/>
+      </Events>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="620" y="540" width="-1" height="-1"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JButton" name="bookingModify">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Modify"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bookingModifyActionPerformed"/>
+      </Events>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="530" y="540" width="-1" height="-1"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JButton" name="bookingDelete">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Delete"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bookingDeleteActionPerformed"/>
+      </Events>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="720" y="540" width="-1" height="-1"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JLabel" name="bookingError">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="12" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="33" green="0" red="ff" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Please fill up the information before proceed !"/>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="169" y="572" width="-1" height="-1"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+  </SubComponents>
+</Form>

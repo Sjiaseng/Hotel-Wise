@@ -22,6 +22,17 @@ A Hotel Management System (Names as Hotel Wise) Built with Java Programming Lang
 # UI:
 
 
+
+# Setup:
+Step 1:
+```bash
+git clone https://github.com/Sjiaseng/Hotel-Wise.git
+```
+
+Step 2:
+Open Folder in Netbeans IDE -> Execute Program
+
+
 ## Text Files Introduction:
 - Login.txt -> Record Staff Information
 - Customer.txt -> Record Customer Information

@@ -30,6 +30,7 @@ git clone https://github.com/Sjiaseng/Hotel-Wise.git
 ```
 
 Step 2:
+
 Open Folder in Netbeans IDE -> Execute Program
 
 

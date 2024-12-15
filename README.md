@@ -20,7 +20,7 @@ A Hotel Management System (Names as Hotel Wise) Built with Java Programming Lang
 8. Information Validation
 
 # UI:
-
+<img src="doc/loading.png" width=250 height=200> <img src="doc/login.png" width=500 height=200>  <img src="doc/menu.png" width=250 height=200> <img src="doc/register.png" width=325 height=200> <img src="doc/profile.png" width=325 height=200>  <img src="doc/booking.png" width=350 height=200> <img src="doc/modify.png" width=450 height=200> <img src="doc/customer.png" width=450 height=200> <img src="doc/information.png" width=550 height=350> <img src="doc/receipt.png" width=350 height=350>          
 
 
 # Setup:
